@@ -1,0 +1,121 @@
+IDE:
+  editor:
+    blinkDuration: 600
+    disableBlinkingCursor: false
+    font:
+      antialias: 2
+      family: Inconsolata
+      size: 13
+    highlightBracketContents: true
+    highlightCurrentLine: false
+    inactiveEditorFadeAlpha: 64
+    indentWidth: 4
+    insertMatchingTokens: false
+    lineWrap: true
+    showLinenumber: true
+    spaceIndent: false
+    stepForwardEvaluation: false
+    theme: My old theme
+    themes:
+      My old theme:
+        built-in: !textFormat
+          color: "#00c3ff"
+          italic: false
+        char: !textFormat
+          color: "#00b600"
+          italic: false
+        class: !textFormat
+          color: "#0080f6"
+          italic: false
+        comment: !textFormat
+          color: "#d90002"
+          italic: false
+        currentLine: !textFormat
+          color: "#000000"
+          background: "#f4f4f4"
+          italic: false
+        env-var: !textFormat
+          color: "#d4691f"
+          italic: false
+        evaluatedCode: !textFormat
+          color: "#000000"
+          background: "#f8a200"
+        keyword: !textFormat
+          color: "#0098ff"
+          bold: true
+          italic: false
+        lineNumbers: !textFormat
+          {}
+        matchingBrackets: !textFormat
+          color: "#ff0000"
+          bold: true
+        mismatchedBrackets: !textFormat
+          color: "#ffffff"
+          background: "#960000"
+          italic: false
+        number: !textFormat
+          color: "#e400e6"
+          italic: false
+        postwindowemphasis: !textFormat
+          color: "#ffffff"
+          bold: true
+          italic: false
+        postwindowerror: !textFormat
+          color: "#d11c24"
+          italic: false
+        postwindowsuccess: !textFormat
+          color: "#738a05"
+          italic: false
+        postwindowtext: !textFormat
+          color: "#cccccc"
+          italic: false
+        postwindowwarning: !textFormat
+          color: "#a57706"
+          italic: false
+        primitive: !textFormat
+          color: "#3a3be1"
+          italic: false
+        searchResult: !textFormat
+          color: "#000000"
+          background: "#596b7f"
+        selection: !textFormat
+          {}
+        string: !textFormat
+          color: "#a6a6a6"
+          italic: false
+        symbol: !textFormat
+          color: "#00c100"
+          italic: false
+        text: !textFormat
+          color: "#e7e7e7"
+          background: "#363636"
+        whitespace: !textFormat
+          color: "#7f7f7f"
+          italic: false
+  interpreter:
+    autoStart: true
+    configFile: /Users/alo/Library/Application Support/SuperCollider/sclang_conf.yaml
+    runtimeDir: ~/dev/
+    standalone: false
+  mainWindow:
+    detached: !QVariantMap
+      documents-dock: ""
+      help-dock: AQHZ0MsAAgAAAAAA+gAAADUAAANPAAADBAAAAPoAAABLAAADTwAAAwQAAAAAAAAAAAUA
+      post-dock: AQHZ0MsAAgAAAAAACAAAABcAAAIKAAABswAAAAgAAAAtAAACCgAAAbMAAAAAAAAAAAUA
+    geometry: AdnQywACAAAAAAGdAAAAFwAABOAAAAMIAAABnQAAAC0AAATgAAADCAAAAAAAAAAABQA=
+    state: AAAA/wAAAAD9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAcAGQAbwBjAHUAbQBlAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAGcA////AAAAAQAAAgAAAALP/AIAAAAC+wAAABIAaABlAGwAcAAtAGQAbwBjAGsCAAABQAAAAFEAAAIAAAACz/sAAAASAHAAbwBzAHQALQBkAG8AYwBrAgAAAAIAAAAZAAACAAAAApcAAANEAAACwQAAAAEAAAACAAAAAQAAAAL8AAAAAA==
+  postWindow:
+    lineWrap: false
+    scrollback: 1000
+  recentDocuments: !QVariantList
+    - /Users/alo/dev/lambda/supercollider/improv/sp_envir_live.scd
+    - /Users/alo/dev/lambda/supercollider/sparsematrix/sets/theatre_in_surround.scd
+    - /Users/alo/dev/lambda/supercollider/sparsematrix/sets/synth_descriptions_theatre_in_surround.scd
+    - /Users/alo/dev/lambda/supercollider/sparsematrix/sets/synthTags.scd
+    - /Users/alo/dev/lambda/supercollider/evp/bufferindex.scd
+    - /Users/alo/dev/lambda/supercollider/ciapp.scd
+    - /Users/alo/dev/lambda/supercollider/sparsematrix/sets/osx_sp_envir.scd
+    - /Users/alo/dev/lambda/supercollider/sparsematrix/sets/presets.scd
+    - /Users/alo/sc/genjam.scd
+    - /Users/alo/sc/twinPrimeSynth.scd
+  startWithSession: ""
