@@ -1,13 +1,21 @@
+s.boot
+
+~paths = "/home/pi/snd/*".pathMatch.keep(11);
+
+~bufs = ~paths.collect({|path| Buffer.read(s, path) })
+
+~bufs.collect(_.duration).do(_.postln)
+
+
 SynthDef(\bitSt2, {|out, efx, amp, emp, buf, dur|
 	var sig;
 	sig = Normalizer.ar(
 		PlayBuf.ar(2, buf, BufRateScale.ir(buf) * 1.neg, 1, BufFrames.kr(buf)),
 		amp) * EnvGen.kr(\env.kr(Env.newClear(8).asArray), timeScale: dur, doneAction: 2);
-	Out.ar(efx, sig * emp);
 	Out.ar(out, sig * amp)
 }).add;
 
-Synth(\bitSt2, ['out', ~decoder.bus, 'efx', 512, 'amp', rrand(0.4, 1.0), 'emp', 0.0, 'buf', ~matrix.buffers['evo'][rrand(50, 45)], 'dur', exprand(0.1, 2.0), 'env', [Env.perc, Env.sine].choose] );
+Synth(\bitSt2, ['out', 0, 'efx', 512, 'amp', rrand(0.4, 1.0), 'emp', 0.0, 'buf', ~bufs.choose, 'dur', exprand(1.0, 2.0), 'env', [Env.perc, Env.sine].choose] );
 
 
 Tdef('tex', {
